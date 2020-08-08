@@ -5,14 +5,14 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' http://localhost:8080">
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' http://localhost:8080">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/multicore.css"/>
     <link rel="stylesheet" href="css/style.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <!--<script src="https://kit.fontawesome.com/9b6bd12a3e.js" crossorigin="anonymous" defer></script>-->
+    <link rel="stylesheet" href="css/fonts.css">
+    <link href="libs/fontawesome/css/all.css" rel="stylesheet">
     <script src="js/libs/jquery-3.3.1.min.js" defer></script>
     <script src="js/libs/popper.min.js"></script>
-    <script src="js/libs/bootstrap/bootstrap.min.js" defer></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js" defer></script>
     <script src="js/scripts.js" defer></script>
     <title>BDeck</title>
 </head>
@@ -43,6 +43,7 @@
 
 <div id="infoPanel" class="container-fluid bg-dark-gray">
     <h4 id="buttonName"></h4>
+    <div id="buttonInfo"></div>
 </div>
 <section id="separator" class="bg-dark-gray">
     <div class="container-fluid separator"></div>
@@ -102,6 +103,12 @@
             <td><button type="button" class="btn btn-primary kb" data-btn="40">40</button></td>
         </tr>
     </table>
+</div>
+
+<div id="kbContextMenu">
+    <div class="ctx-item"><i class="fas fa-bolt"></i>Try</div>
+    <div class="ctx-item"><i class="fas fa-edit"></i>Edit</div>
+    <div class="ctx-item"><i class="fas fa-trash"></i>Clear</div>
 </div>
 </body>
 </html>

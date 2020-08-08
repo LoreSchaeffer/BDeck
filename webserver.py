@@ -28,7 +28,6 @@ class RequestHandler(BaseHTTPRequestHandler):
             if "btn" not in args:
                 self.send(401, '{"error": "Invalid request"}')
             else:
-                print(args)
                 self.send(200, json.dumps(config.get_button(args["btn"][0]), cls=ButtonEncoder))
         else:
             self.send(404, None)

@@ -30,3 +30,52 @@
     max-width: 100px;
     max-height: 100px;
 }
+
+.kb {
+    font-size: 16px;
+    background-color: #1a73e8 !important;
+}
+
+.kb:hover {
+    background-color: #287ae6 !important;
+}
+
+.kb:active {
+    background-color: #3367d6 !important;
+}
+
+.kb.selected {
+    background-color: #2358c6 !important;
+}
+
+#kbContextMenu {
+    position: fixed;
+    z-index: 10000;
+    width: 150px;
+    background-color: var(--almost-black);
+    border-radius: 5px;
+    transform: scale(0);
+    transition: transform 50ms ease-in-out;
+    transform-origin: top left;
+}
+
+#kbContextMenu.active {
+    transform: scale(1);
+    transition: transform 50ms ease-in-out;
+}
+
+.ctx-item {
+    padding: 8px 10px;
+    font-size: 15px;
+    color: var(--light);
+    cursor: pointer;
+}
+
+.ctx-item:hover {
+    background-color: var(--dark-blue);
+}
+
+.ctx-item i {
+    width: 15px;
+    margin-right: 10px;
+}

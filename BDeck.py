@@ -10,7 +10,6 @@ from sreader import SerialReader
 from webserver import WebServer
 from buttons import *
 
-
 guiDir = os.path.join(os.getcwd(), "gui")
 appThread = None
 electronThread = None
@@ -19,10 +18,13 @@ httpdThread = None
 config = None
 
 buttons = ["btn_0", "btn_1", "btn_2", "btn_3", "btn_4", "btn_5", "btn_6", "btn_7", "btn_8", "btn_9",
-               "btn_a", "btn_b", "btn_c", "btn_d", "btn_e", "btn_f", "btn_g", "btn_h", "btn_i", "btn_j",
-               "btn_k", "btn_l", "btn_m", "btn_n", "btn_o", "btn_p", "btn_q", "btn_r", "btn_s", "btn_t",
-               "btn_u", "btn_v", "btn_w", "btn_x", "btn_y", "btn_z", "btn_?", "btn_!", "btn_/", "btn_&"]
+           "btn_a", "btn_b", "btn_c", "btn_d", "btn_e", "btn_f", "btn_g", "btn_h", "btn_i", "btn_j",
+           "btn_k", "btn_l", "btn_m", "btn_n", "btn_o", "btn_p", "btn_q", "btn_r", "btn_s", "btn_t",
+           "btn_u", "btn_v", "btn_w", "btn_x", "btn_y", "btn_z", "btn_?", "btn_!", "btn_/", "btn_&"]
 specials = ["btn_@", "btn_#", "btn_+", "btn_-"]
+
+#TODO allow icon instead of number
+
 
 def openGui():
     global electronThread
@@ -57,14 +59,18 @@ class AppThread(Thread):
     def exit(self):
         self.app.Destroy()
 
+
 class ElectronThread(Thread):
     electron = None
 
     def run(self):
-        self.electron = subprocess.run(["npm", "start"], cwd=guiDir, shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        self.electron = subprocess.run(["npm", "start"], cwd=guiDir, shell=True, stdout=subprocess.DEVNULL,
+                                       stderr=subprocess.DEVNULL)
 
     def exit(self):
-        subprocess.run(["taskkill", "/F", "/IM", "node.exe"], shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        subprocess.run(["taskkill", "/F", "/IM", "node.exe"], shell=True, stdout=subprocess.DEVNULL,
+                       stderr=subprocess.DEVNULL)
+
 
 class Configuration:
 
@@ -112,6 +118,7 @@ class Configuration:
             decoded["buttons"].append(btn)
 
         for macro in dic["macros"]:
+            # TODO
             pass
 
         return decoded
