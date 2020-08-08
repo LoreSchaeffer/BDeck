@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' http://localhost:8080">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' http://localhost:8080">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/multicore.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!--<script src="https://kit.fontawesome.com/9b6bd12a3e.js" crossorigin="anonymous" defer></script>-->
+    <script src="js/libs/jquery-3.3.1.min.js" defer></script>
+    <script src="js/libs/popper.min.js"></script>
+    <script src="js/libs/bootstrap/bootstrap.min.js" defer></script>
+    <script src="js/scripts.js" defer></script>
+    <title>BDeck</title>
+</head>
+<body>
+<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><img class="img-responsive" src="images/icons/icon.png" alt="brand"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mcn-navbar" aria-controls="mcn-navbar" aria-expanded="false" aria-label="Naviga">
+        <i class="mcn-navbar-toggler fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="mcn-navbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle py-0" href="#" data-toggle="dropdown" aria-haspopup="tree" aria-expanded="false">File</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Import</a>
+                    <a class="dropdown-item" href="#">Export</a>
+                    <a class="dropdown-item" href="#">Exit</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle py-0" href="#" data-toggle="dropdown" aria-haspopup="tree" aria-expanded="false">Macro</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">New Macro</a>
+                    <a class="dropdown-item" href="#">Macro List</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div id="infoPanel" class="container-fluid bg-dark-gray">
+    <h4 id="buttonName"></h4>
+</div>
+<section id="separator" class="bg-dark-gray">
+    <div class="container-fluid separator"></div>
+</section>
+<div id="kbPanel" class="container-fluid bg-dark-gray">
+    <table id="keyboard">
+        <tr>
+            <td><button type="button" class="btn btn-primary kb kb-special" data-btn="A">A</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="1">1</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="2">2</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="3">3</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="4">4</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="5">5</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="6">6</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="7">7</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="8">8</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="9">9</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="10">10</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="btn btn-primary kb kb-special" data-btn="B">B</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="11">11</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="12">12</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="13">13</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="14">14</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="15">15</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="16">16</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="17">17</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="18">18</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="19">19</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="20">20</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="btn btn-primary kb kb-special" data-btn="C">C</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="21">21</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="22">22</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="23">23</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="24">24</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="25">25</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="26">26</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="27">27</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="28">28</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="29">29</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="30">30</button></td>
+        </tr>
+        <tr>
+            <td><button type="button" class="btn btn-primary kb kb-special" data-btn="D">D</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="31">31</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="32">32</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="33">33</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="34">34</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="35">35</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="36">36</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="37">37</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="38">38</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="39">39</button></td>
+            <td><button type="button" class="btn btn-primary kb" data-btn="40">40</button></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

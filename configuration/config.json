@@ -1,0 +1,63 @@
+{
+  "selected_profile": "0",
+  "profiles": {
+    "0": {
+      "btn_0": [{
+          "keyboard": [
+            {"key": "Ctrl_L", "delay": 0, "time": 20},
+            {"key": "Alt_L", "delay": 1, "time": 20},
+            {"key": "Numpad7", "delay": 2, "time": 20}
+          ]
+        }],
+      "btn_1": [{
+          "keyboard": [
+            {"key": "Ctrl_L", "delay": 0, "time": 20},
+            {"key": "Alt_L", "delay": 1, "time": 20},
+            {"key": "Numpad9", "delay": 2, "time": 20}
+          ]
+        }],
+      "btn_2": [{
+          "keyboard": [
+            {"key": "Ctrl_L", "delay": 0, "time": 20},
+            {"key": "Alt_L", "delay": 1, "time": 20},
+            {"key": "Numpad1", "delay": 2, "time": 20}
+          ]
+        }],
+      "btn_3": [{
+          "keyboard": [
+            {"key": "Ctrl_L", "delay": 0, "time": 20},
+            {"key": "Alt_L", "delay": 1, "time": 20},
+            {"key": "Numpad3", "delay": 2, "time": 20}
+          ]
+        }],
+      "btn_4": [{
+          "keyboard": [
+            {"key": "Ctrl_L", "delay": 0, "time": 20},
+            {"key": "Alt_L", "delay": 1, "time": 20},
+            {"key": "Numpad6", "delay": 2, "time": 20}
+          ]
+        }],
+      "btn_5": [
+        [{
+          "keyboard": [
+            {"key": "Ctrl_L", "delay": 0, "time": 20},
+            {"key": "Alt_L", "delay": 1, "time": 20},
+            {"key": "Numpad+", "delay": 2, "time": 20}
+          ]
+        }]
+      ],
+      "btn_6": [
+        {"cmd": ""}
+      ],
+      "btn_7": [
+        {"cmd": ""}
+      ],
+      "btn_8": [
+        {"cmd": ""}
+      ],
+      "btn_9": [
+        {"cmd": ""}
+      ]
+    }
+  }
+}

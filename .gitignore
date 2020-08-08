@@ -1,0 +1,3 @@
+settings.json
+# Project exclude paths
+/gui/node_modules/

@@ -1,0 +1,21 @@
+{
+  "name": "bdeck",
+  "version": "1.0.0",
+  "description": "The companion software of BDeck",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/LoreSchaeffer/BDeck",
+  "keywords": [
+    "BDeck"
+  ],
+  "author": "LoreSchaeffer",
+  "license": "Copyright © 2020 Lorenzo Magni. All rights reserved.",
+  "devDependencies": {
+    "electron": "^9.0.0"
+  },
+  "dependencies": {
+    "gson": "^0.1.5"
+  }
+}

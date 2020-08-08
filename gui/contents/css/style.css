@@ -1,0 +1,32 @@
+#separator .separator {
+    border-color: var(--gray-dark)
+}
+
+#infoPanel {
+    height: 166px;
+}
+
+#kbPanel {
+    height: 400px;
+}
+
+#kbPanel table {
+    width: 100%;
+    height: 100%;
+}
+
+#kbPanel td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.kb-special {
+    margin-right: 1em;
+}
+
+#kbPanel .btn {
+    min-width: 75px;
+    min-height: 75px;
+    max-width: 100px;
+    max-height: 100px;
+}

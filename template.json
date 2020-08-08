@@ -1,0 +1,96 @@
+{
+  "buttons": [
+    {
+      "button": "btn_0",
+      "type": "keyboard",
+      "action": {
+        "keys": [
+          {
+            "key": "Ctrl_L",
+            "delay": 0,
+            "time": 20
+          },
+          {
+            "key": "Alt_L",
+            "delay": 0,
+            "time": 20
+          },
+          {
+            "key": "Del",
+            "delay": 0,
+            "time": 20
+          }
+        ]
+      }
+    },
+    {
+      "button": "btn_1",
+      "type": "command",
+      "action": {
+        "command": "dir"
+      }
+    },
+    {
+      "button": "btn_2",
+      "type": "macro",
+      "action": {
+        "macro": "macro1"
+      }
+    },
+    {
+      "button": "btn_3",
+      "type": "program",
+      "action": {
+        "path": "C:\\Program Files (x86)\\Notepad++\\notepad++.exe"
+      }
+    },
+    {
+      "button": "btn_4",
+      "type": "internal",
+      "action": {
+        "command": "next"
+      }
+    }
+  ],
+  "macros": [
+    {
+      "name": "macro1",
+      "actions": [
+        {
+          "type": "keyboard",
+          "action": {
+            "keys": [
+              {
+                "key": "Ctrl_L",
+                "delay": 0,
+                "time": 20
+              },
+              {
+                "key": "Alt_L",
+                "delay": 0,
+                "time": 20
+              },
+              {
+                "key": "Del",
+                "delay": 0,
+                "time": 20
+              }
+            ]
+          },
+          "order": 0,
+          "delay": 0
+        },
+        {
+          "type": "command",
+          "action": {
+            "action": {
+              "command": "dir"
+            }
+          },
+          "order": 1,
+          "delay": 10
+        }
+      ]
+    }
+  ]
+}
